@@ -1,0 +1,12 @@
+f1 = open("File1.txt", "w")
+f1.write("Hello, Jashobanta\n")
+f1.write("Python File")
+f1.close()
+
+f1 = open("File1.txt", "r")
+f2 = open("File3.txt", "w")
+data = f1.read()
+f2.write(data)
+f1.close()
+f2.close()
+print("Content copied successfully")
